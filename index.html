@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title> About Me</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+        
+        h1 { 
+            color: white;
+            text-align: center;
+            background-color :black;
+            font-size: 50px; 
+        }
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        h4{
+            font-size: 30px;
+        }   
+        h5{
+            font-size: x-large;
+        }
+        body {
+            background-color: aqua;
+        }
+        section {
+            align-content: center;
+                }
+        footer {
+            color: white;
+            text-align: center;
+            background-color :black;
+            font-size: 50px; 
+        }
+        button {
+            background-color: aquamarine;
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+           Personal Webpage
+        </h1>
+    </header>
+    <ul id="foto">
+        <img src="oyeh.jpg" width ="350" height="500">
+    </section>
+    <section id="tentang-saya">
+        <h2>
+            Gwen Baby Christsanto
+        </h2>
+        <type>
+            @gwenbaby14
+        </type>
+        <h3>
+            Yogyakarta, Indonesia
+        </h3>
+        <h4>
+            Universitas Kristen Duta Wacana
+        </h4>
+    </section>
+    <section id="keterampilan">
+        <h5>
+            Skillset
+            <ol>
+                <li>Logmat</li>
+                <li>Mattek</li>
+                <li>Matdis</li>
+            </ol>
+        </h5>
+    </section>
+    
+    <button id="tombolGantiWarna">Ganti Warna</button>
+
+    <footer>
+    <h6> Thank You For Visiting My Website </h6>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['#8fco00', '#00ccff', '#ff1493', '#78009e',]
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click',gantiWarnaRandom)
+    </script>
+</body>
+</html>
